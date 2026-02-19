@@ -27,6 +27,7 @@ def main():
             "input": "search for the 3 job postings for an ai engineer using langchain in the bay area on linkedin and list their details",
         }
     )
+    print(result)
 
 
 if __name__ == "__main__":

@@ -29,6 +29,7 @@ agent = create_react_agent(
 )
 
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
+extract_output = RunnableLambda(lambda x: x["output"])
 chain = agent_executor
 
 
